@@ -1,0 +1,54 @@
+@CustomerApi_HostAddress = https://localhost:44342
+
+POST {{CustomerApi_HostAddress}}/api/addcustomer
+Content-Type: application/json
+
+{
+    "CustomerName": "Antonio Moreno",
+    "ContactName": "Antonio",
+    "Country": "America"
+}
+
+###
+
+GET {{CustomerApi_HostAddress}}/api
+
+###
+
+GET {{CustomerApi_HostAddress}}/api/customerbyid?id=1005
+
+###
+
+DELETE {{CustomerApi_HostAddress}}/api/deletecustomer?id=1007
+
+###
+
+POST {{CustomerApi_HostAddress}}/api/addcustomer
+Content-Type: application/json
+
+{
+  //Customer
+}
+
+###
+
+POST {{CustomerApi_HostAddress}}/api/addcustomer
+Content-Type: application/json
+
+{
+  //Customer
+}
+
+###
+
+POST {{CustomerApi_HostAddress}}/api/updatecustomer?id=6
+Content-Type: application/json
+
+{
+    "customerId":6,
+    "customerName": "Ali",
+    "contactName": "Ahmed",
+    "country": "Pakistan"
+}
+
+###
